@@ -10,6 +10,7 @@ public class Region {
     private String id;
     private String name;
     private String description;
+    private String groupPattern;
     private Location location;
     private Services services = new Services();
     private OnyxiaAPI onyxiaAPI;
@@ -37,6 +38,14 @@ public class Region {
 
     public void setDescription(String description) {
 	this.description = description;
+    }
+
+    public String getGroupPattern(){
+        return groupPattern;
+    }
+
+    public void setGroupPattern(String groupPattern){
+        this.groupPattern = groupPattern;
     }
 
     public Location getLocation() {
